@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>picturepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (picturepage.psd) -->
+<script language="JavaScript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		picturepage_over = newImage("picturepage/picturepage-over.jpg");
+		picturepage_over012 = newImage("picturepage/picturepage-over-12.jpg");
+		picturepage_over014 = newImage("picturepage/picturepage-over-14.jpg");
+		picturepage_over016 = newImage("picturepage/picturepage-over-16.jpg");
+		picturepage_over018 = newImage("picturepage/picturepage-over-18.jpg");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</script>
+<!-- End Preload Script -->
+</head>
+<body bgcolor="#999999" onload="preloadImages();">
+<!-- ImageReady Slices (picturepage.psd) -->
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="picturepage/picturepage.jpg" width="23" height="114"></td>
+		<td>
+			<img src="picturepage/picturepage-02.jpg" width="121" height="114"></td>
+		<td>
+			<img src="picturepage/picturepage-03.jpg" width="189" height="114"></td>
+		<td>
+			<img src="picturepage/picturepage-04.jpg" width="182" height="114"></td>
+		<td>
+			<img src="picturepage/picturepage-05.jpg" width="158" height="114"></td>
+		<td>
+			<img src="picturepage/picturepage-06.jpg" width="107" height="114"></td>
+		<td>
+			<img src="picturepage/picturepage-07.jpg" width="20" height="114"></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="picturepage/picturepage-08.jpg" width="23" height="61"></td>
+		<td>
+			<a href="biography.html" target="_self"
+				onmouseover="changeImages('picturepage009', 'picturepage/picturepage-over.jpg'); return true;"
+				onmouseout="changeImages('picturepage009', 'picturepage/picturepage-09.jpg'); return true;"
+				onmousedown="changeImages('picturepage009', 'picturepage/picturepage-09.jpg'); return true;"
+				onmouseup="changeImages('picturepage009', 'picturepage/picturepage-over.jpg'); return true;">
+				<img name="picturepage009" src="picturepage/picturepage-09.jpg" width="121" height="61" border="0"></a></td>
+		<td>
+			<a href="missonstatement.html" target="_self"
+				onmouseover="changeImages('picturepage011', 'picturepage/picturepage-over-12.jpg'); return true;"
+				onmouseout="changeImages('picturepage011', 'picturepage/picturepage-11.jpg'); return true;"
+				onmousedown="changeImages('picturepage011', 'picturepage/picturepage-11.jpg'); return true;"
+				onmouseup="changeImages('picturepage011', 'picturepage/picturepage-over-12.jpg'); return true;">
+				<img name="picturepage011" src="picturepage/picturepage-11.jpg" width="189" height="61" border="0"></a></td>
+		<td>
+			<a href="ourservices.html" target="_self"
+				onmouseover="changeImages('picturepage013', 'picturepage/picturepage-over-14.jpg'); return true;"
+				onmouseout="changeImages('picturepage013', 'picturepage/picturepage-13.jpg'); return true;"
+				onmousedown="changeImages('picturepage013', 'picturepage/picturepage-13.jpg'); return true;"
+				onmouseup="changeImages('picturepage013', 'picturepage/picturepage-over-14.jpg'); return true;">
+				<img name="picturepage013" src="picturepage/picturepage-13.jpg" width="182" height="61" border="0"></a></td>
+		<td>
+			<a href="contact.html" target="_self"
+				onmouseover="changeImages('picturepage015', 'picturepage/picturepage-over-16.jpg'); return true;"
+				onmouseout="changeImages('picturepage015', 'picturepage/picturepage-15.jpg'); return true;"
+				onmousedown="changeImages('picturepage015', 'picturepage/picturepage-15.jpg'); return true;"
+				onmouseup="changeImages('picturepage015', 'picturepage/picturepage-over-16.jpg'); return true;">
+				<img name="picturepage015" src="picturepage/picturepage-15.jpg" width="158" height="61" border="0"></a></td>
+		<td>
+			<a href="home.html" target="_self"
+				onmouseover="changeImages('picturepage017', 'picturepage/picturepage-over-18.jpg'); return true;"
+				onmouseout="changeImages('picturepage017', 'picturepage/picturepage-17.jpg'); return true;"
+				onmousedown="changeImages('picturepage017', 'picturepage/picturepage-17.jpg'); return true;"
+				onmouseup="changeImages('picturepage017', 'picturepage/picturepage-over-18.jpg'); return true;">
+				<img name="picturepage017" src="picturepage/picturepage-17.jpg" width="107" height="61" border="0"></a></td>
+		<td>
+			<img src="picturepage/picturepage-19.jpg" width="20" height="61"></td>
+	</tr>
+	<tr>
+		<td colspan="7">
+			<img src="picturepage/picturepage-20.jpg" width="800" height="431"></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</body>
+</html>

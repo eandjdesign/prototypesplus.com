@@ -1,0 +1,17 @@
+$$SYSTEM=../..
+$$PRIVATE=/usr/home/proto5/www/htdocs/mpc/data
+$$COMMONDOCS=/u/httpd/cgi-docs/Mercantec/PC_F_6.6.1
+$$CFG=/usr/home/proto5/www/htdocs/mpc/data/cfg
+$$USR=..
+$$PRIVATEHTDOCS=/usr/home/proto5/www/htdocs/mpc/docs
+$$CGIBIN=/usr/home/proto5/www/cgi-bin/mpc
+$$SCRIPT=/usr/home/proto5/www/htdocs/mpc/data/scripts
+$$SESSION=/usr/home/proto5/www/htdocs/mpc/data/session
+$$DATA=/usr/home/proto5/www/htdocs/mpc/data/data
+$$DB=/usr/home/proto5/www/htdocs/mpc/data/data
+$$WATSITE=/usr/home/proto5/www/htdocs/mpc/data/SiteMgr
+$$WATSITEPUBLIC=/usr/home/proto5/www/htdocs/mpc/docs/SiteMgr
+$$CONFIGFILE=/usr/home/proto5/www/htdocs/mpc/data/cfg/DataAPI.cfg
+$$PUBLISHROOT=/usr/home/proto5/www/htdocs/mpc/docs/Site
+$$SITEPRIVATEHTDOCS=/usr/home/proto5/www/htdocs/mpc/docs
+$$DEFAULTDOC=/usr/home/proto5/www/htdocs/

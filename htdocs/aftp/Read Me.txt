@@ -1,0 +1,7 @@
+To our clients,
+
+	Please DO NOT place any files in this directory.  All incoming files should be placed in the "Visitor" (with a capital "V") directory, in a folder named so that the person(s) responsible for that file on our end can easily identify it.  Also, after placing any file on the site, please call or email the appropriate party at Prototypes Plus to let them know that the file is on our site and available to pull down.
+
+Thanks,
+
+Gregg
