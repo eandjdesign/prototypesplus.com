@@ -17,6 +17,53 @@
 @import "lib/forms.scss";
 @import "lib/tables.scss";
 
+@import "lib/helpers.scss";
+
+.content-contain {
+	margin: 1rem auto;
+	width: 1140px;
+	border: 3px solid #c6c8ca;
+}
+
+.main-header {
+	position: relative;
+	padding: 2rem 6rem;
+	background-color: #f1f1f2;
+	border-bottom: 3px solid #c6c8ca;
+	.aj-logo,
+	.prototypesplus-logo {
+		overflow: hidden;
+		text-indent: -9999px;
+		position: relative;
+	}
+	.aj-logo {
+		margin: 0;
+		float: right;
+		
+		top: -2rem;
+		width: 264px;
+		height: 244px;
+		background: transparent url('/assets/img/aj-logo.png') no-repeat center center;
+	}
+	.prototypesplus-logo {
+		top: 0;
+		width: 554px;
+		height: 99px;
+		background: transparent url('/assets/img/prototypesplus-logo.png') no-repeat center center;
+	}
+}
+
+.primary-column,
+.secondary-column {
+	padding: 2rem 6rem;
+}
+.secondary-column {
+	border-top: 5px solid #139394;
+	background-color: #99d8dc;
+}
+
+
+
 
 // Print Styles Here
 // --------------------------------------------------

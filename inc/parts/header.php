@@ -8,17 +8,18 @@
 
 		</script>
 
-		<header id="main-header" class="main-header">
-			<h1 class="site-logo">
-				Website Name
-				<img src="http://placehold.it/250x100&text=Logo" alt="Website Name" class="hide">
-			</h1>
-			<nav id="main-nav" class="nav nav-main" role="navigation">
-				<ul class="nav-site">
-					<li class="site-link"><a href="#sitelink1" title="site link 1">site link 1</a></li>
-					<li class="site-link"><a href="#sitelink2" title="site link 2">site link 2</a></li>
-					<li class="site-link"><a href="#sitelink3" title="site link 3">site link 3</a></li>
-					<li class="site-link"><a href="#sitelink4" title="site link 4">site link 4</a></li>
-				</ul>
-			</nav>
+		<header id="main-header" class="main-header row">
+			<div class="col-twelve">
+				<h1 class="aj-logo site-logo">
+					A+J Product Solutions
+					<img src="/assets/img/aj-logo.png" alt="Website Name" class="hide">
+				</h1>
+				<h2 class="prototypesplus-logo site-logo">
+					Prototypes Plus
+					<img src="/assets/img/prototypesplus-logo.png" alt="Website Name" class="hide">
+				</h2>
+				
+				<h3 class="highlight">News flash!</h3>
+				<p><strong>Prototypes Plus</strong> has joined <strong>A+J Product Solutions</strong></p>
+			</div>
 		</header>

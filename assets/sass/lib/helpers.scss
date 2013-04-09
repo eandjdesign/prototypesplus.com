@@ -35,7 +35,7 @@ small,
 // .invisible == Hide visually and from screenreaders, but maintain layout
 .hidden,
 .invisible { visibility: hidden; }
-.hidden    { display: none;      }
+.hide      { display: none;      }
 
 
 // Hide only visually, but have it available for screenreaders 

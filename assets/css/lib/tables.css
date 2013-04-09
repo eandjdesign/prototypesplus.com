@@ -1,0 +1,30 @@
+/* line 7, ../../sass/lib/tables.scss */
+table {
+  margin-bottom: 1.4rem;
+}
+
+/* line 8, ../../sass/lib/tables.scss */
+th {
+  border-bottom: 2px solid #dddddd;
+  font-weight: bold;
+}
+
+/* line 9, ../../sass/lib/tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 10, ../../sass/lib/tables.scss */
+th, td {
+  padding: 4px 10px 4px 0;
+}
+
+/* line 11, ../../sass/lib/tables.scss */
+tfoot {
+  font-style: italic;
+}
+
+/* line 12, ../../sass/lib/tables.scss */
+caption {
+  background: #ffc;
+}

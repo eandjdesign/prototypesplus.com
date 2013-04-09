@@ -1,0 +1,196 @@
+/* -----------------------------------------------------------------------------
+  
+   Boilerplate reset.css
+   * Resets default browser CSS.
+
+	Versions
+	0.1    2011-02-17    - Initial Creation and Development
+	                     - Added HTML5 reset from Eric Meyer
+
+	0.2    2011-09-18    - Adding itrems from HTML5 Boilerplate
+	
+	0.3    2012-02-06    - Added box-sizing attribute per Paul Irish
+   
+   -------------------------------------------------------------------------- */
+/* apply a natural box layout model to all elements: http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 17, ../../sass/lib/reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 30, ../../sass/lib/reset.scss */
+html, body, div,
+article, aside, figure, footer, header, hgroup, nav, section,
+span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, code, del, dfn, rem, i, img, q,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* -----------------------------------------------------------------------------
+   HTML5 elements
+   -------------------------------------------------------------------------- */
+/* line 44, ../../sass/lib/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 45, ../../sass/lib/reset.scss */
+audio[controls], canvas, video {
+  display: inline-block;
+}
+
+/* -----------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using rem units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Remove Android and iOS tap highlight color to prevent entire container being highlighted
+ *    www.yuiblog.com/blog/2010/10/01/quick-tip-customizing-the-mobile-safari-tap-highlight-color/
+ * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+/* These selection declarations have to be separate
+ * No text-shadow: twitter.com/miketaylr/status/12228805301
+ * Also: hot pink! */
+/* line 65, ../../sass/lib/reset.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 66, ../../sass/lib/reset.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 70, ../../sass/lib/reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 71, ../../sass/lib/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 74, ../../sass/lib/reset.scss */
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: 400;
+}
+
+/* line 81, ../../sass/lib/reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+/* line 82, ../../sass/lib/reset.scss */
+q, blockquote {
+  quotes: "" "";
+}
+
+/* line 83, ../../sass/lib/reset.scss */
+input, textarea {
+  margin: 0;
+}
+
+/* line 84, ../../sass/lib/reset.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* line 86, ../../sass/lib/reset.scss */
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted black;
+  cursor: help;
+}
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+/* line 93, ../../sass/lib/reset.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 95, ../../sass/lib/reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  margin: 1rem 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+/* line 105, ../../sass/lib/reset.scss */
+img,
+a img {
+  border: 0;
+}
+
+/* bicubic resizing for non-native sized IMG: code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* line 108, ../../sass/lib/reset.scss */
+img, object, rembed {
+  max-width: 100%;
+}
+
+/* line 109, ../../sass/lib/reset.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  height: auto;
+}
+
+/* Correct overflow displayed oddly in IE9 */
+/* line 115, ../../sass/lib/reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Clearing floats without extra markup  */
+/* line 119, ../../sass/lib/reset.scss */
+.clrfx {
+  display: inline-block;
+}
+
+/* line 120, ../../sass/lib/reset.scss */
+.clrfx:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 121, ../../sass/lib/reset.scss */
+* html .clrfx {
+  height: 1%;
+}
+
+/* line 122, ../../sass/lib/reset.scss */
+.clrfx {
+  display: block;
+}
