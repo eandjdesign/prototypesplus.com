@@ -1,0 +1,240 @@
+// ----------------------------------------------------------------------------- 
+// -----------------------------------------------------------------------------
+// forms.scss
+//
+// this comment block will not render. If credit needs to be given,
+// put those details in the comment block in base.scss. kthxbai.
+
+// Base Form Structure
+// -----------------------------------------------------------------------------
+//<form action="#" method="post" accept-charset="utf-8" class="forms">
+//	<ul class="inline">
+//		<li class="form-row">
+//			<label class="size-small" for="contact-name">Name</label>
+//			<input type="text" name="contact-name" value="" id="contact-name" placeholder="John Smith" class="size-large">
+//		</li>
+//		<li class="form-row">
+//			<label class="size-small" for="contact-email">Email Address</label>
+//			<input type="email" name="contact-email" value="" id="contact-email" placeholder="you@domain.com" class="size-large">
+//		</li>
+//		<li class="form-row">
+//			<label class="size-small" for="contact-phone">Phone Number</label>
+//			<input type="text" name="contact-phone" value="" id="contact-phone" placeholder="Optional" class="size-large">
+//		</li>
+//		<li class="form-row">
+//			<label class="size-small" for="contact-message">Message</label>
+//			<textarea name="contact-message" id="contact-message" placeholder="Contact us with your thoughts" class="size-large"></textarea>
+//		</li>
+//		<li class="btn-row inset-small">
+//			<input type="submit" value="Continue &rarr;">
+//		</li>
+//	</ul>
+//</form>
+// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+
+
+// 1. Correct font-size not inheriting in all browsers
+// 2. Remove margins in FF3/4 S5 Chrome
+// 3. Define consistent vertical alignment display in all browsers
+button,
+input,
+select,
+textarea {
+	font-size: 1rem;
+	margin: 0;
+	vertical-align: baseline;
+}
+
+// 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+// 2. Correct inner spacing displayed oddly in IE6/7
+button,
+input,
+textarea { line-height: normal; }
+
+// Remove inner padding and border in FF3/4
+// www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+// 1. Display hand cursor for clickable form elements
+// 2. Allow styling of clickable form elements in iOS
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+}
+
+// make buttons play nice in IE:
+// http://viget.com/inspire/styling-the-button-element-in-internet-explorer/
+button {
+	width: auto;
+	overflow: visible;
+}
+ 
+form  { padding: 0; border: 0; }
+label { cursor: pointer; }
+
+// Remove default vertical scrollbar in IE6-9
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	margin: 0;
+	padding: .4rem;
+	box-shadow: inset 0 0 2px #c5c5c5;
+	border: 1px solid #c5c5c5;
+}
+textarea,
+select[multiple],
+input[type=tel],
+input[type=url],
+input[type=text],
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password] {
+	padding: 6px 5px;
+	border: 1px solid #bbb;
+	border-radius: 2px;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+}
+
+textarea:focus,
+input[type=tel],
+input[type=url],
+input[type=text],
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+select[multiple]:focus,
+input + .add-on,
+textarea + .add-on,
+input:focus + .add-on,
+textarea:focus + .add-on {
+	-webkit-transition: border linear 0.15s, box-shadow linear 0.15s;
+	   -moz-transition: border linear 0.15s, box-shadow linear 0.15s;
+	    -ms-transition: border linear 0.15s, box-shadow linear 0.15s;
+	     -o-transition: border linear 0.15s, box-shadow linear 0.15s;
+	        transition: border linear 0.15s, box-shadow linear 0.15s;
+}
+
+/* Colors for form validity */
+input.invalid,
+input:invalid,
+input.invalid:focus,
+input:invalid:focus,
+select:invalid,
+select.invalid,
+select:invalid:focus,
+select.invalid:focus,
+textarea.invalid,
+textarea:invalid,
+textarea.invalid:focus,
+textarea:invalid:focus {
+	border: 1px solid #cd0a0a;
+	background: #fef1ec;
+}
+
+input:focus,
+textarea:focus,
+select[multiple]:focus {
+	outline: 0;
+	box-shadow: 0 0 3px rgba(0,0,0,.15);
+	border-color: rgba(119, 119, 119, 1);
+}
+input[type=radio] {
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+
+::-webkit-input-placeholder { color: $color-grays-light; font-size: .8rem; font-style: italic; } // Webkit-based
+:-ms-input-placeholder      { color: $color-grays-light; font-size: .8rem; font-style: italic; } // MS
+::-moz-placeholder          { color: $color-grays-light; font-size: .8rem; font-style: italic; } // Firefox 19+
+:-moz-placeholder           { color: $color-grays-light; font-size: .8rem; font-style: italic; } // Firefox 18-
+
+
+fieldset {
+	padding: 1.4rem;
+	margin: 0 0 1.5rem 0;
+	border: 1px solid #ddd;
+}
+legend {
+	margin: 0;
+	padding: 0 .4rem;
+	border: 0;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+// Consistent box sizing and appearance
+input[type="radio"],
+input[type="checkbox"] {
+	box-sizing: border-box;
+	vertical-align: text-bottom;
+}
+input[type="search"] {
+	box-sizing:         content-box;
+	-moz-box-sizing:    content-box;
+	-webkit-box-sizing: content-box;
+}
+
+// Colors for form validity
+input:valid,   textarea:valid   {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+
+
+// Form Framework
+// ----------------------------------------------------------------------------- 
+.forms {
+	.inline {
+		clear: both;
+		display: block;
+		margin: 0;
+		.form-row {
+			margin: .5rem 0;
+		}
+		label {
+			line-height: 1;
+		}
+	}
+	textarea {
+		min-height: 75px;
+		resize: none;
+	}
+}
+
+[class*='size-'],
+[class*='inset-'] { display: inline-block; }
+
+.size-mini    { width: 50px;  }
+.size-xxsmall { width: 80px;  }
+.size-xsmall  { width: 100px; }
+.size-small   { width: 150px; }
+.size-medium  { width: 200px; }
+.size-large   { width: 250px; }
+.size-xlarge  { width: 300px; }
+.size-xxlarge { width: 404px; }
+.size-fluid   { width: 100%;  }
+
+[class*='inset-'] { padding-left: 4px;  }
+.inset-xxsmall    { margin-left: 80px;  }
+.inset-xsmall     { margin-left: 100px; }
+.inset-small      { margin-left: 150px; }
+.inset-medium     { margin-left: 200px; }
+.inset-large      { margin-left: 250px; }
+.inset-xlarge     { margin-left: 300px; }

@@ -1,0 +1,55 @@
+// ----------------------------------------------------------------------------- 
+// helpers.scss
+//
+// this comment block will not render. If credit needs to be given,
+// put those details in the comment block in base.scss. kthxbai.
+// -----------------------------------------------------------------------------
+
+// Some default classes
+// -----------------------------------------------------------------------------
+small,
+.small  { font-size: 0.8rem; line-height: 1.875rem; margin-bottom: 1.875rem; }
+.large  { font-size: 1.2rem; line-height: 2.500rem; margin-bottom: 1.250rem; }
+.quiet  { color: #999; }
+.hilite { background-color: #ffc; }
+.oops   { background-color: #f00; color: #fff; }
+
+.disabled { cursor: default; }
+.disabled:hover { color: #999; border-bottom: 0; }
+
+.top    { margin-top: 0;    padding-top: 0;    }
+.bottom { margin-bottom: 0; padding-bottom: 0; }
+
+.float-Left  { float: left;  padding-right: .5rem; padding-bottom: .25rem; }
+.float-right { float: right; padding-left:  .5rem; padding-bottom: 0;     }
+.float-none  { float: none;  }
+
+// Setting up columns
+.col {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+// .hidden    == Hide for both screenreaders and browsers | css-discuss.incutio.com/wiki/Screenreader_Visibility
+// .invisible == Hide visually and from screenreaders, but maintain layout
+.hidden,
+.invisible { visibility: hidden; }
+.hidden    { display: none;      }
+
+
+// Hide only visually, but have it available for screenreaders 
+// www.webaim.org/techniques/css/invisiblecontent/ 
+// Solution from: http://j.mp/visuallyhidden - Thanks Jonathan Neal!
+.visuallyhidden {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+// for image replacement
+.ir {
+	display: block;
+	text-indent:-999rem;
+	overflow:hidden;
+	background-repeat: no-repeat;
+}

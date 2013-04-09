@@ -1,0 +1,21 @@
+// ----------------------------------------------------------------------------- 
+// _variables.scss
+//
+// this comment block will not render. If credit needs to be given,
+// put those details in the comment block in base.scss. kthxbai.
+// -----------------------------------------------------------------------------
+
+// define sitewide color palette
+$color-palette-primary   : #fff; // just guesses right now
+$color-palette-secondary : #f00; // just guesses right now
+$color-palette-tertiary  : #0f0; // just guesses right now
+$color-palette-quadrary  : #00f; // just guesses right now
+
+
+// define sitewide media query breakpoints
+$breakpoint-desktop : 1000px; // just guesses right now
+$breakpoint-tablet  : 500px;  // just guesses right now
+$breakpoint-phone   : 250px;  // just guesses right now
+
+
+// define mixins that will be used

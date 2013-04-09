@@ -1,0 +1,30 @@
+// ----------------------------------------------------------------------------- 
+// mixins.scss
+//
+// this comment block will not render. If credit needs to be given,
+// put those details in the comment block in base.scss. kthxbai.
+// -----------------------------------------------------------------------------
+
+// define mixins that will be used
+@mixin group {
+	display: inline-block;
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+	* html & { height: 1%; }
+	display: block;
+}
+
+@mixin row {
+	@include group;
+	width: 100%;
+	max-width: 1140px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+

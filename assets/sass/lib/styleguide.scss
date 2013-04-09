@@ -1,0 +1,93 @@
+// ----------------------------------------------------------------------------- 
+// styleguide.scss
+//
+// this comment block will not render. If credit needs to be given,
+// put those details in the comment block in base.scss. kthxbai.
+// -----------------------------------------------------------------------------
+
+@import "_variables";
+@import "_mixins";
+@import "compass/css3";
+
+.styleguide-grid {
+	[class*="col-"] {
+		background-color: transparentize($color-grays-light, .5);
+		color: #fff;
+		text-shadow: 0 0 2px $color-grays-light;
+		font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+		font-size: .5rem;
+		padding: .25rem;
+	}
+}
+
+.color-palette {
+	margin: 1rem .5rem 2rem;
+	padding: 0;
+	@include group;
+	[class*='color-'] {
+		margin: 0 1rem 0 0;
+		padding: 0;
+		list-style: none;
+		border: 5px solid #fff;
+		float: left;
+		height: 100px;
+		width: 100px;
+		box-shadow: 0 0 8px #aaa;
+		text-align: center;
+		padding-top: 30px;
+		position: relative;
+		overflow: hidden;
+		font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+		color: #fff;
+		&:after {
+			@include defaultTransition;
+		}
+		&:hover:after {
+			@include defaultTransition;
+			color: #fff;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: .25rem 0;
+			font-size: .9rem;
+			background-color: transparentize(#000, .5);
+		}
+	}
+	.color-primary {
+		background-color: $color-palette-primary;
+		&:hover:after {
+			content: "Primary";
+		}
+	}
+	.color-secondary  {
+		background-color: $color-palette-secondary;
+		&:hover:after {
+			content: "Secondary";
+		}
+	}
+	.color-tertiary   {
+		background-color: $color-palette-tertiary;
+		&:hover:after {
+			content: "Tertiary";
+		}
+	}
+	.color-quaternary {
+		background-color: $color-palette-quaternary;
+		&:hover:after {
+			content: "Quaternary";
+		}
+	}
+	.color-quinary    {
+		background-color: $color-palette-quinary;
+		&:hover:after {
+			content: "Quinary";
+		}
+	}
+	.color-alternate  {
+		background-color: $color-grays-light;
+		&:hover:after {
+			content: "Alternate";
+		}
+	}
+}
