@@ -1,9 +1,0 @@
-AuthUserFile /usr/home/proto5/www/htdocs/visitor/.htpasswd
-AuthGroupFile /dev/null
-AuthName Protected Area
-AuthType Basic
-
-<Limit GET POST>
-require user proto5
-require user upload
-</Limit>

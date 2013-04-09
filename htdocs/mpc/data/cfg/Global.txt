@@ -1,5 +1,0 @@
-SessionID	Counter	/usr/home/proto5/www/htdocs/mpc/data/session/	Sessions.ctr(5-50)
-
-
-
-
