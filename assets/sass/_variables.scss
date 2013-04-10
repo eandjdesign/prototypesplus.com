@@ -6,17 +6,19 @@
 // -----------------------------------------------------------------------------
 
 // define sitewide color palette
-$color-palette-primary   : #fff; // just guesses right now
-$color-palette-secondary : #f00; // just guesses right now
-$color-palette-tertiary  : #0f0; // just guesses right now
-$color-palette-quadrary  : #00f; // just guesses right now
+$color-palette-primary   : #139394; // dark logo teal
+$color-palette-secondary : #b8e2e5; // light logo teal
+$color-palette-tertiary  : #808285; // dark gray
+$color-palette-quadrary  : #f1f1f2; // light gray
+$highlight-color         : #f99e1c; // orange
 
-$color-grays-light      : #333;
 
 // define sitewide media query breakpoints
 $breakpoint-desktop : 1000px; // just guesses right now
 $breakpoint-tablet  : 500px;  // just guesses right now
 $breakpoint-phone   : 250px;  // just guesses right now
 
+$sin     : #000; // black as sin.. hehe
+$blessing: #fff; // opposite of sin, duh.
 
 // define mixins that will be used

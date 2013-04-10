@@ -19,7 +19,8 @@
 					<img src="/assets/img/prototypesplus-logo.png" alt="Website Name" class="hide">
 				</h2>
 				
-				<h3 class="highlight">News flash!</h3>
-				<p><strong>Prototypes Plus</strong> has joined <strong>A+J Product Solutions</strong></p>
+				<h3>
+					<span class="highlight">News flash!</span>
+					<br><strong>Prototypes Plus</strong> has joined <strong>A+J Product Solutions</strong></h3>
 			</div>
 		</header>

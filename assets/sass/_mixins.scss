@@ -5,7 +5,6 @@
 // put those details in the comment block in base.scss. kthxbai.
 // -----------------------------------------------------------------------------
 
-// define mixins that will be used
 @mixin group {
 	display: inline-block;
 	&:after {
@@ -19,6 +18,9 @@
 	display: block;
 }
 
+// =================================================================================================================
+// ! The 1140px Grid by Eric Ritchey \ Modification of http://cssgrid.net \ @ritcheyer \ http://www.eandjdesign.com
+// =================================================================================================================
 @mixin row {
 	@include group;
 	width: 100%;
@@ -26,5 +28,26 @@
 	min-width: 755px;
 	margin: 0 auto;
 	overflow: hidden;
+//	margin-bottom: .5rem;
+	padding: 0 1rem .5rem 1rem;
 }
 
+@mixin col-one    { float: left; margin-left: 3.8%; min-height: 1px; width:   4.85%; }
+@mixin col-two    { float: left; margin-left: 3.8%; min-height: 1px; width:  13.45%; }
+@mixin col-three  { float: left; margin-left: 3.8%; min-height: 1px; width:  22.05%; }
+@mixin col-four   { float: left; margin-left: 3.8%; min-height: 1px; width:  30.75%; }
+@mixin col-five   { float: left; margin-left: 3.8%; min-height: 1px; width:  39.45%; }
+@mixin col-six    { float: left; margin-left: 3.8%; min-height: 1px; width:  48.00%; }
+@mixin col-seven  { float: left; margin-left: 3.8%; min-height: 1px; width:  56.75%; }
+@mixin col-eight  { float: left; margin-left: 3.8%; min-height: 1px; width:  65.40%; }
+@mixin col-nine   { float: left; margin-left: 3.8%; min-height: 1px; width:  74.05%; }
+@mixin col-ten    { float: left; margin-left: 3.8%; min-height: 1px; width:  82.70%; }
+@mixin col-eleven { float: left; margin-left: 3.8%; min-height: 1px; width:  91.35%; }
+@mixin col-twelve { float: none; margin-left: auto; min-height: 1px; width: 100.00%; }
+
+@mixin defaultTransition {
+	-webkit-transition: all 0.15s ease-in-out;
+	   -moz-transition: all 0.15s ease-in-out;
+	     -o-transition: all 0.15s ease-in-out;
+	        transition: all 0.15s ease-in-out;
+}

@@ -15,21 +15,23 @@
 @import "lib/typography.scss";
 @import "lib/grid.scss";
 @import "lib/forms.scss";
+@import "lib/buttons.scss";
 @import "lib/tables.scss";
 
 @import "lib/helpers.scss";
 
 .content-contain {
+//	@include row;
 	margin: 1rem auto;
 	width: 1140px;
-	border: 3px solid #c6c8ca;
+	border: 3px solid $color-palette-tertiary;
 }
 
 .main-header {
 	position: relative;
-	padding: 2rem 6rem;
-	background-color: #f1f1f2;
-	border-bottom: 3px solid #c6c8ca;
+	padding: 2rem 5rem;
+	background-color: $color-palette-quadrary;
+	border-bottom: 3px solid $color-palette-tertiary;
 	.aj-logo,
 	.prototypesplus-logo {
 		overflow: hidden;
@@ -50,19 +52,45 @@
 		width: 554px;
 		height: 99px;
 		background: transparent url('/assets/img/prototypesplus-logo.png') no-repeat center center;
+		margin-bottom: 2rem;
 	}
+}
+
+.highlight {
+	color: $highlight-color;
+}
+
+.primary-column {
+	ul { @include row; }
+	li { @include col-five; }
+}
+.primary-colum li:nth-child(even) {
+	
 }
 
 .primary-column,
 .secondary-column {
-	padding: 2rem 6rem;
+	padding: 2rem 5rem;
 }
 .secondary-column {
-	border-top: 5px solid #139394;
-	background-color: #99d8dc;
+	background-color: $color-palette-secondary;
+	border-top: 5px solid $color-palette-primary;
 }
 
-
+.footer {
+	p {
+		margin: 0;
+		font-size: .8rem;
+		padding: .5rem;
+		line-height: 1;
+	}
+	a {
+		color: $blessing;
+		font-weight: bold;
+	}
+	color: $blessing;
+	background-color: $color-palette-tertiary;
+}
 
 
 // Print Styles Here

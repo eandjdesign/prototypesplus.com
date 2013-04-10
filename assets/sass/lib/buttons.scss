@@ -1,0 +1,37 @@
+// ----------------------------------------------------------------------------- 
+// -----------------------------------------------------------------------------
+// forms.scss
+//
+// this comment block will not render. If credit needs to be given,
+// put those details in the comment block in base.scss. kthxbai.
+// ----------------------------------------------------------------------------- 
+// -----------------------------------------------------------------------------
+
+
+// Base Compass Imports, Custom Variables and Mixins
+// --------------------------------------------------
+@import "_variables";
+@import "_mixins";
+@import "compass/css3";
+// --------------------------------------------------
+
+@mixin btn {
+	margin: 0;
+	padding: .5rem;
+	border: 2px solid;
+	display: inline-block;
+	line-height: 1;
+	&:hover {
+		text-decoration: none;
+		border: 2px solid;
+	}
+}
+.btn-primary {
+	@include btn;
+	color: $blessing;
+	background-color: $color-palette-primary;
+	border-color: $color-palette-primary;
+	&:hover {
+		border-color: $color-palette-primary;
+	}
+}

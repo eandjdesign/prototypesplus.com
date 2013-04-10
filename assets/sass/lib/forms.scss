@@ -160,10 +160,10 @@ input[type=radio] {
 }
 
 
-::-webkit-input-placeholder { color: $color-grays-light; font-size: .8rem; font-style: italic; } // Webkit-based
-:-ms-input-placeholder      { color: $color-grays-light; font-size: .8rem; font-style: italic; } // MS
-::-moz-placeholder          { color: $color-grays-light; font-size: .8rem; font-style: italic; } // Firefox 19+
-:-moz-placeholder           { color: $color-grays-light; font-size: .8rem; font-style: italic; } // Firefox 18-
+::-webkit-input-placeholder { color: $color-palette-tertiary; font-size: .8rem; font-style: italic; } // Webkit-based
+:-ms-input-placeholder      { color: $color-palette-tertiary; font-size: .8rem; font-style: italic; } // MS
+::-moz-placeholder          { color: $color-palette-tertiary; font-size: .8rem; font-style: italic; } // Firefox 19+
+:-moz-placeholder           { color: $color-palette-tertiary; font-size: .8rem; font-style: italic; } // Firefox 18-
 
 
 fieldset {

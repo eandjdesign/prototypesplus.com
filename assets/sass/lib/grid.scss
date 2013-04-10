@@ -1,30 +1,25 @@
-/* ================================================================================================================= */
-/* ! The 1140px Grid by Eric Ritchey \ Modification of http://cssgrid.net \ @ritcheyer \ http://www.eandjdesign.com  */
-/* ================================================================================================================= */
-
-.row {
-	@include row;
-}
+// ----------------------------------------------------------------------------- 
+// The 1140px Grid by Eric Ritchey || @ritcheyer || http://www.eandjdesign.com
+// ----------------------------------------------------------------------------- 
+.row { @include row; }
 
 [class*='col-'] {
 	float: left;
 	margin-left: 3.8%;
 	min-height: 1px;
-	.row & {
-		:first-child { margin-left: 0; }
-	}
 }
+.row [class*='col-']:first-child { margin-left: 0; }
 
-.col-one    { width:   4.85%; }
-.col-two    { width:  13.45%; }
-.col-three  { width:  22.05%; }
-.col-four   { width:  30.75%; }
-.col-five   { width:  39.45%; }
-.col-six    { width:  48.00%; }
-.col-seven  { width:  56.75%; }
-.col-eight  { width:  65.40%; }
-.col-nine   { width:  74.05%; }
-.col-ten    { width:  82.70%; }
-.col-eleven { width:  91.35%; }
-.col-twelve { width: 100.00%; margin-left: auto; float: none; }
+.col-one    { @include col-one; }
+.col-two    { @include col-two; }
+.col-three  { @include col-three; }
+.col-four   { @include col-four; }
+.col-five   { @include col-five; }
+.col-six    { @include col-six; }
+.col-seven  { @include col-seven; }
+.col-eight  { @include col-eight; }
+.col-nine   { @include col-nine; }
+.col-ten    { @include col-ten; }
+.col-eleven { @include col-eleven; }
+.col-twelve { @include col-twelve; }
 

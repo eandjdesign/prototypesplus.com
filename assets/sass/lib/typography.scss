@@ -22,7 +22,7 @@ body {
 }
 
 /* Default fonts and colors. */
-body, select, input, textarea { color: #444; }
+body, select, input, textarea { color: $color-palette-tertiary; }
 
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl,
 input, select, textarea, button { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -39,6 +39,14 @@ input, select, textarea, button { font-family: 'Helvetica Neue', Helvetica, Aria
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
+	color: $color-palette-primary;
+	.secondary-column & {
+		color: $blessing;
+		font-weight: bold;
+	}
+	.main-header & {
+		color: $color-palette-tertiary;
+	}
 }
 
 /* Remove padding or spacing if headers are next to each other */
@@ -46,6 +54,13 @@ h1 + h2, h1 + h3, h1 + h4, h1 + h5,
 h1 + h6, h2 + h3, h2 + h4, h2 + h5,
 h2 + h6, h3 + h4, h3 + h5, h3 + h6,
 h4 + h5, h4 + h6, h5 + h6 { margin: 0; padding: 0; }
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p { margin-top: 0; }
 
 h1 { font-size: 2.00rem; margin-top: 0.50rem; line-height: 1.00; }
 h2 { font-size: 1.50rem; margin-top: 0.75rem; }
