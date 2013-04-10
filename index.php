@@ -44,7 +44,7 @@
 						<h2>Visit Us</h2>
 						1245 Birchwood Drive<br />
 						Sunnyvale, CA 94089<br />
-						Map &amp; Directions
+						<a href="http://goo.gl/maps/xG9aH" target="_blank" title="Come for a visit!">Map &amp; Directions</a>
 					</div>
 				</aside>
 			</section>
