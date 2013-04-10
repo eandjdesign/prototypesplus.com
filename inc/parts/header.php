@@ -17,8 +17,10 @@
 		<header id="main-header" class="main-header row">
 			<div class="col-twelve">
 				<h1 class="aj-logo site-logo">
-					A+J Product Solutions
-					<a href="http://ajproductsolutions.com/"><img src="/assets/img/aj-logo.png" alt="Website Name" class="hide"></a>
+					<a href="http://ajproductsolutions.com/">
+						A+J Product Solutions
+						<img src="/assets/img/aj-logo.png" alt="Website Name" class="hide">
+					</a>
 				</h1>
 				<h2 class="prototypesplus-logo site-logo">
 					Prototypes Plus

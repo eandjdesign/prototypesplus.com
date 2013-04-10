@@ -32,28 +32,36 @@
 	padding: 2rem 5rem;
 	background-color: $color-palette-quadrary;
 	border-bottom: 3px solid $color-palette-tertiary;
-	.aj-logo,
-	.prototypesplus-logo {
-		overflow: hidden;
-		text-indent: -9999px;
-		position: relative;
+}
+.aj-logo,
+.prototypesplus-logo {
+	overflow: hidden;
+	text-indent: -9999px;
+	position: relative;
+}
+.aj-logo {
+	margin: 0;
+	float: right;
+	
+	top: -2rem;
+	width: 264px;
+	height: 244px;
+	background: transparent url('/assets/img/aj-logo.png') no-repeat center center;
+	a {
+		display: block;
+		height: 100%;
+		width: 100%;
+		&:hover {
+			border-bottom: 0;
+		}
 	}
-	.aj-logo {
-		margin: 0;
-		float: right;
-		
-		top: -2rem;
-		width: 264px;
-		height: 244px;
-		background: transparent url('/assets/img/aj-logo.png') no-repeat center center;
-	}
-	.prototypesplus-logo {
-		top: 0;
-		width: 554px;
-		height: 99px;
-		background: transparent url('/assets/img/prototypesplus-logo.png') no-repeat center center;
-		margin-bottom: 2rem;
-	}
+}
+.prototypesplus-logo {
+	top: 0;
+	width: 554px;
+	height: 99px;
+	background: transparent url('/assets/img/prototypesplus-logo.png') no-repeat center center;
+	margin-bottom: 2rem;
 }
 
 .highlight {
@@ -64,12 +72,8 @@
 	ul { @include row; }
 	li { @include col-five; }
 }
-.primary-colum li:nth-child(even) {
-	
-}
 
-.primary-column,
-.secondary-column {
+[class*="-column"] {
 	padding: 2rem 5rem;
 }
 .secondary-column {

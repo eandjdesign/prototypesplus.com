@@ -1077,15 +1077,17 @@ small,
   background-color: #f1f1f2;
   border-bottom: 3px solid #808285;
 }
-/* line 36, ../sass/base.scss */
-.main-header .aj-logo,
-.main-header .prototypesplus-logo {
+
+/* line 37, ../sass/base.scss */
+.aj-logo,
+.prototypesplus-logo {
   overflow: hidden;
   text-indent: -9999px;
   position: relative;
 }
-/* line 41, ../sass/base.scss */
-.main-header .aj-logo {
+
+/* line 42, ../sass/base.scss */
+.aj-logo {
   margin: 0;
   float: right;
   top: -2rem;
@@ -1094,7 +1096,18 @@ small,
   background: transparent url("/assets/img/aj-logo.png") no-repeat center center;
 }
 /* line 50, ../sass/base.scss */
-.main-header .prototypesplus-logo {
+.aj-logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+/* line 54, ../sass/base.scss */
+.aj-logo a:hover {
+  border-bottom: 0;
+}
+
+/* line 59, ../sass/base.scss */
+.prototypesplus-logo {
   top: 0;
   width: 554px;
   height: 99px;
@@ -1102,12 +1115,12 @@ small,
   margin-bottom: 2rem;
 }
 
-/* line 59, ../sass/base.scss */
+/* line 67, ../sass/base.scss */
 .highlight {
   color: #f99e1c;
 }
 
-/* line 64, ../sass/base.scss */
+/* line 72, ../sass/base.scss */
 .primary-column ul {
   display: inline-block;
   display: block;
@@ -1130,7 +1143,7 @@ small,
 * html .primary-column ul {
   height: 1%;
 }
-/* line 65, ../sass/base.scss */
+/* line 73, ../sass/base.scss */
 .primary-column li {
   float: left;
   margin-left: 3.8%;
@@ -1138,31 +1151,30 @@ small,
   width: 39.45%;
 }
 
-/* line 72, ../sass/base.scss */
-.primary-column,
-.secondary-column {
+/* line 76, ../sass/base.scss */
+[class*="-column"] {
   padding: 2rem 5rem;
 }
 
-/* line 75, ../sass/base.scss */
+/* line 79, ../sass/base.scss */
 .secondary-column {
   background-color: #b8e2e5;
   border-top: 5px solid #139394;
 }
 
-/* line 80, ../sass/base.scss */
+/* line 84, ../sass/base.scss */
 .footer {
   color: white;
   background-color: #808285;
 }
-/* line 81, ../sass/base.scss */
+/* line 85, ../sass/base.scss */
 .footer p {
   margin: 0;
   font-size: .8rem;
   padding: .5rem;
   line-height: 1;
 }
-/* line 87, ../sass/base.scss */
+/* line 91, ../sass/base.scss */
 .footer a {
   color: white;
   font-weight: bold;
