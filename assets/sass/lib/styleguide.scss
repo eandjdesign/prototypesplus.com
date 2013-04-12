@@ -5,15 +5,15 @@
 // put those details in the comment block in base.scss. kthxbai.
 // -----------------------------------------------------------------------------
 
-@import "_variables";
-@import "_mixins";
+@import "../_variables";
+@import "../_mixins";
 @import "compass/css3";
 
 .styleguide-grid {
 	[class*="col-"] {
-		background-color: transparentize($color-grays-light, .5);
+		background-color: transparentize($color-palette-quadrary, .5);
 		color: #fff;
-		text-shadow: 0 0 2px $color-grays-light;
+		text-shadow: 0 0 2px $color-palette-quadrary;
 		font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
 		font-size: .5rem;
 		padding: .25rem;
@@ -72,22 +72,10 @@
 			content: "Tertiary";
 		}
 	}
-	.color-quaternary {
-		background-color: $color-palette-quaternary;
+	.color-quadrary {
+		background-color: $color-palette-quadrary;
 		&:hover:after {
 			content: "Quaternary";
-		}
-	}
-	.color-quinary    {
-		background-color: $color-palette-quinary;
-		&:hover:after {
-			content: "Quinary";
-		}
-	}
-	.color-alternate  {
-		background-color: $color-grays-light;
-		&:hover:after {
-			content: "Alternate";
 		}
 	}
 }

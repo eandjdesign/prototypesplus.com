@@ -62,8 +62,8 @@ audio[controls], canvas, video       { display: inline-block; }
  * No text-shadow: twitter.com/miketaylr/status/12228805301
  * Also: hot pink! */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection      { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: transparentize($color-palette-primary, .5); color: #fff; text-shadow: none; }
+::selection      { background: transparentize($color-palette-primary, .5); color: #fff; text-shadow: none; }
 
 
 

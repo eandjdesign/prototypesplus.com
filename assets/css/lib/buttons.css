@@ -1,6 +1,20 @@
-/* line 16, ../../sass/lib/buttons.scss */
+/* line 29, ../../sass/lib/buttons.scss */
 .btn-primary {
   margin: 0;
-  padding: 0;
-  border: 1px solid;
+  padding: .5rem;
+  border: 2px solid;
+  display: inline-block;
+  line-height: 1;
+  color: white;
+  background-color: #139394;
+  border-color: #139394;
+}
+/* line 24, ../../sass/lib/buttons.scss */
+.btn-primary:hover {
+  text-decoration: none;
+  border: 2px solid;
+}
+/* line 34, ../../sass/lib/buttons.scss */
+.btn-primary:hover {
+  border-color: #139394;
 }

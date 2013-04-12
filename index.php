@@ -37,7 +37,7 @@
 				<aside id="secondary" class="secondary-column row">
 					<div class="col-six">
 						<h1>Let's Get Started</h1>
-						<p>Get in touch today!<br />(408) 400-9501</p>
+						<p>Get in touch today!<br /><strong>(408) 400-9501</strong></p>
 						<a href="http://ajproductsolutions.com/" target="_blank" class="btn-primary">Visit Our Website</a>
 					</div>
 					<div class="col-six">
