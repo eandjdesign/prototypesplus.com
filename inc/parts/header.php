@@ -19,12 +19,12 @@
 				<h1 class="aj-logo site-logo">
 					<a href="http://ajproductsolutions.com/">
 						A+J Product Solutions
-						<img src="/assets/img/aj-logo.png" alt="Website Name" class="hide">
+						<img src="/assets/img/aj-logo.png" alt="A&J Product Solutions" class="hide">
 					</a>
 				</h1>
 				<h2 class="prototypesplus-logo site-logo">
 					Prototypes Plus
-					<img src="/assets/img/prototypesplus-logo.png" alt="Website Name" class="hide">
+					<img src="/assets/img/prototypesplus-logo.png" alt="Prototypes Plus" class="hide">
 				</h2>
 				
 				<h1>

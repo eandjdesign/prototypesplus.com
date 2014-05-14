@@ -3,7 +3,7 @@
 <!--[if IE 9]>         <html class="no-js ie9 w3c" lang="en">  <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js w3c" lang="en">  <!--<![endif]-->
 	<head>
-		<title><?php if($pageTitle != '') { echo $pageTitle . ' &raquo; '; } ?>SITENAME GOES HERE</title>
+		<title><?php if($pageTitle != '') { echo $pageTitle . ' &raquo; '; } ?>Prototypes Plus</title>
 		<?php if($pageDescription != '') { ?><meta name="description" content="<?= $pageDescription; ?>" /><?php } ?>
 		<?php if($pageKeywords != '') { ?><meta name="keywords" content="<?= $pageKeywords; ?>" /><?php } ?>
 
